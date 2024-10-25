@@ -96,9 +96,17 @@ def iniciarJuegoArchivo():
 #Funcion para minans aleatorias
 def iniciarJuego():
     contenido = textoInputRandom.get("1.0", "end-1c") 
-    juego = Buscaminas(4, 4, int(contenido),'aleatorio',[],[])
-    #iniciando juego random
-    juego.jugar() 
+    while True:
+        juego = Buscaminas(4, 4, int(contenido),'aleatorio',[],[])
+        #iniciando juego random
+        juego.jugar()
+        print('Esperando respuesta del jugador para reinciar o continuar jugando')
+        Reiniciar()
+        if (respuesta_Bluetooth()=='reiniciar'):
+            print('Se reiniciara a configuracion')
+            break
+        else :
+            print('Se continuara con configuracion anterior')
 
 
 

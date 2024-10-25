@@ -1,0 +1,17 @@
+config_ini
+ADD x:0, y:0
+ADD x:0, y:1
+ADD x:0, y:2
+ADD x:0, y:3
+ADD x:1, y:0
+ADD x:1, y:1
+ADD x:1, y:2
+ADD x:1, y:3
+ADD x:2, y:0
+ADD x:2, y:1
+ADD x:2, y:2
+ADD x:2, y:3
+ADD x:3, y:0
+ADD x:3, y:1
+ADD x:3, y:2
+config:fin
